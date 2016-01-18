@@ -1,0 +1,52 @@
+html, body, h1, div, ul, li {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+
+}
+
+ul {
+  list-style: none;
+}
+div.tile {
+  float: left;
+  width: 20px;
+  line-height: 20px;
+  height: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+div.board {
+  margin: auto;
+  width: 800px;
+}
+
+.unexplored {
+  border-style: outset;
+  border-width: 3px;
+  background-color: #52E396;
+}
+
+.explored {
+  border-style: inset;
+  border-width: 3px;
+  background-color: #eee;
+}
+
+div.row {
+  margin: auto;
+  display: block;
+  width: 280px;
+}
+
+.group::after {
+  content: "";
+  display: block;
+  clear: both;
+}
